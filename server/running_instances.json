@@ -1,6 +1,6 @@
 [
   {
-    "machineIp": "192.168.1.10",
+    "machineIp": "13.221.90.105",
     "sshUsername": "ubuntu",
     "sshPassword": "",
     "sshKeyPath": "D:/Lucas/tensor_ala",
@@ -8,7 +8,7 @@
     "instanceKey": "tge1"
   },
   {
-    "machineIp": "192.168.1.11",
+    "machineIp": "3.86.105.12",
     "sshUsername": "admin",
     "sshPassword": "secret",
     "sshKeyPath": "D:/Lucas/tensor_ala",
