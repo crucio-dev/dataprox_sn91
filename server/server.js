@@ -541,7 +541,10 @@ async function ensureDataproxExists(ssh) {
 
 // Traffic Generator endpoint
 app.post('/api/traffic-generator/run', async (req, res) => {
-  console.log("<<<Received traffic generator request:", req.body);
+  console.log("\n");
+  console.log("<<<<<<<<<<<<Received traffic generator request:", req.body);
+  console.log("\n");
+  
   let ssh = null;
   try {
     const { interface, moatPrivateIp, moatPublicIp, privateIp, nodeIndex, totalDuration, ...sshConfig } = req.body;
@@ -657,6 +660,10 @@ app.post('/api/traffic-generator/run', async (req, res) => {
       privateIp: privateIp,
       moatPrivateIp: moatPrivateIp
     }, moatPublicIp, totalDuration);
+
+    console.log("\n\n");
+    console.log("<<<<<<<<<<<<Traffic generator started successfully:", instance);
+    console.log("\n")
 
     // Check if the process is running
     console.log('Checking if process is running...');
