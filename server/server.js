@@ -47,7 +47,7 @@ async function loadRunningInstances() {
           // Ensure SSH config is included in the instance data
           instance.sshConfig = sshConfig;
           runningInstances.set(instance.instanceKey, instance);
-          // saveRunningInstances();
+          saveRunningInstances();
         } else {
           console.log(`Instance ${instance.instanceKey} is no longer running`);
         }
@@ -477,7 +477,7 @@ app.post('/api/traffic-generator/test-connection', async (req, res) => {
     const result = await ssh.execCommand('echo "Connection successful"');
     console.log('Test command result:', result);
     ssh.dispose();
-    res.json({ message: 'Connection successful' });
+    res.json({ message: ' Connectionsuccessful' });
   } catch (error) {
     console.error('SSH Test Error:', {
       message: error.message,
