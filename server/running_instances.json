@@ -1,18 +1,1 @@
-[
-  {
-    "machineIp": "13.221.90.105",
-    "sshUsername": "ubuntu",
-    "sshPassword": "",
-    "sshKeyPath": "D:/Lucas/tensor_ala",
-    "pid": 12345,
-    "instanceKey": "tge1"
-  },
-  {
-    "machineIp": "3.86.105.12",
-    "sshUsername": "ubuntu",
-    "sshPassword": "",
-    "sshKeyPath": "D:/Lucas/tensor_ala",
-    "pid": 67890,
-    "instanceKey": "tge2"
-  }
-]
+[]
