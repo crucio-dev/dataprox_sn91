@@ -9,8 +9,8 @@
   },
   {
     "machineIp": "3.86.105.12",
-    "sshUsername": "admin",
-    "sshPassword": "secret",
+    "sshUsername": "ubuntu",
+    "sshPassword": "",
     "sshKeyPath": "D:/Lucas/tensor_ala",
     "pid": 67890,
     "instanceKey": "tge2"
