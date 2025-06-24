@@ -932,7 +932,7 @@ app.get('/api/traffic-generator/verify-instances', async (req, res) => {
   try {
     const hasChanges = await verifyAllInstances();
     const instances = getRunningInstances();
-    console.log("Running Instances:", instances);
+    console.log("###############Running Instances:", instances);
     res.json({ 
       instances,
       hasChanges
