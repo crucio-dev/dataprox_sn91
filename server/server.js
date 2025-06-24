@@ -47,14 +47,14 @@ async function loadRunningInstances() {
           // Ensure SSH config is included in the instance data
           instance.sshConfig = sshConfig;
           runningInstances.set(instance.instanceKey, instance);
-          // saveRunningInstances();
+          saveRunningInstances();
         } else {
           console.log(`Instance ${instance.instanceKey} is no longer running`);
         }
       }
       
       // // Save the verified instances back to file
-      saveRunningInstances();
+      // saveRunningInstances();
       console.log('Loaded running instances:', Array.from(runningInstances.values()));
     }
   } catch (error) {
